@@ -21,3 +21,7 @@ K
 ymg-pdf-viewer/build.gradle,f/6/f6c74e2068521fbb9dd6754d2108b09f21fd63fd
 @
 app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
+Q
+!ymg-pdf-viewer/proguard-rules.pro,c/c/ccab18fb3934ae01aae69e5e0f11c1cf19dda25e
+X
+(gradle/wrapper/gradle-wrapper.properties,f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
