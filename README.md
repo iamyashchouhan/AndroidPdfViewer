@@ -1,6 +1,6 @@
 Sure! Here’s an improved version of your README, formatted in a more structured HTML-like style, complete with sections, headings, and code blocks.
 
-```markdown
+
 # Android PdfViewer
 
 A powerful library for displaying PDF documents on Android, featuring animations, gestures, zoom, and double-tap support. This library is based on [PdfiumAndroid](https://github.com/barteksc/PdfiumAndroid) for efficient PDF decoding.
