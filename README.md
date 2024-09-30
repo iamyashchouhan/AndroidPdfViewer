@@ -1,4 +1,3 @@
-Sure! Here’s an improved version of your README, formatted in a more structured HTML-like style, complete with sections, headings, and code blocks.
 
 
 # Android PdfViewer
