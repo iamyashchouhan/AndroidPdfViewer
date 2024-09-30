@@ -111,13 +111,7 @@ This library simplifies the process of displaying PDF documents in your Android 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Key Improvements Made:
-1. **Clear Structure**: Organized sections for easy navigation.
-2. **Code Blocks**: Enhanced readability with proper code formatting.
-3. **Usage Examples**: Provided clear usage examples and options.
-4. **Conclusion and License Sections**: Added for completeness and professionalism.
+© 2024 iamyashchouhan, YMG-Developers
 
-Feel free to adjust any sections according to your specific needs!
