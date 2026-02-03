@@ -5,6 +5,14 @@
 A powerful library for displaying PDF documents on Android, featuring animations, gestures, zoom, and double-tap support. This library is based on [PdfiumAndroid](https://github.com/barteksc/PdfiumAndroid) for efficient PDF decoding.
 
 
+## GitHub Stats
+
+![GitHub stars](https://img.shields.io/github/stars/iamyashchouhan/AndroidPdfViewer?style=social)
+![GitHub forks](https://img.shields.io/github/forks/iamyashchouhan/AndroidPdfViewer?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/iamyashchouhan/AndroidPdfViewer?style=social)
+![GitHub issues](https://img.shields.io/github/issues/iamyashchouhan/AndroidPdfViewer)
+
+
 
 ## Installation
 
