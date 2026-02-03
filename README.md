@@ -79,6 +79,7 @@ Your app will now pass Google Play's 16 KB compatibility checks and work on devi
 
 ```
 
+
 ## Usage
 
 ### Include PDFView in Your Layout
