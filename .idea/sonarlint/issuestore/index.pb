@@ -25,3 +25,5 @@ Q
 !ymg-pdf-viewer/proguard-rules.pro,c/c/ccab18fb3934ae01aae69e5e0f11c1cf19dda25e
 X
 (gradle/wrapper/gradle-wrapper.properties,f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
+q
+Aymg-pdf-viewer/src/main/java/com/ymg/pdf/viewer/MainActivity.java,3/9/390b90b94f3622940de3aa4da3d0f1934d5d2ad2
