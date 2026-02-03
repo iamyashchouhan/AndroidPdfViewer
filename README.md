@@ -4,6 +4,8 @@
 
 A powerful library for displaying PDF documents on Android, featuring animations, gestures, zoom, and double-tap support. This library is based on [PdfiumAndroid](https://github.com/barteksc/PdfiumAndroid) for efficient PDF decoding.
 
+
+
 ## Installation
 
 ### Step 1: Add Repositories
@@ -26,8 +28,55 @@ Include the library in your app-level `build.gradle`:
 
 ```groovy
 dependencies {
-    implementation 'com.github.iamyashchouhan:AndroidPdfViewer:1.0.3' // Replace 'Tag' with the latest version
+    implementation 'com.github.iamyashchouhan:AndroidPdfViewer:1.0.4' // latest
 }
+```
+
+## 🚀 New in This Version
+
+### 16 KB Page Size Support ✅ FIXED
+
+✅ **RESOLVED:** This library has been updated to support 16 KB page sizes for Google Play compatibility.
+Starting **November 1st, 2025**, all new apps and updates targeting Android 15+ must support 16 KB page sizes.
+
+**What Was Fixed:**
+
+* **Issue:** The `pdfium-android:1.9.0` dependency contained prebuilt native libraries that were not aligned for 16 KB page sizes
+* **Solution:** Implemented compressed shared libraries configuration and post-build realignment scripts
+* **Result:** APK now passes all 16 KB alignment checks and is Google Play compliant
+
+**Key Updates Made:**
+
+* **AGP Version:** Using 8.13.0 (above required 8.5.1)
+* **NDK Version:** Updated to r28+ for 16 KB support
+* **Packaging:** Configured for compressed shared libraries to avoid alignment issues
+* **Native Libraries:** All native libraries are properly aligned for 16 KB page sizes
+* **Realignment Scripts:** Added automated tools to fix alignment issues
+
+**✅ Verification:**
+Use the provided scripts to verify 16 KB alignment:
+
+* **Linux/macOS:**
+
+```bash
+./check_16kb_alignment.sh your-app.apk
+```
+
+* **Windows:**
+
+```powershell
+.\check_16kb_alignment.ps1 -ApkFile "your-app.apk"
+```
+
+**Fix Alignment:**
+
+```powershell
+.\realign_apk.bat "your-app.apk"
+```
+
+**🎉 Google Play Compliance:**
+Your app will now pass Google Play's 16 KB compatibility checks and work on devices with 16 KB page sizes.
+
 ```
 
 ## Usage
