@@ -4,5 +4,5 @@ jdk:
 android:
   publish: false
 
-tasks:
+install:
   - ./gradlew clean assembleRelease
