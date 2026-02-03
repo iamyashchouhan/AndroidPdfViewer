@@ -4,11 +4,11 @@ plugins {
 
 android {
     namespace 'com.ymg.pdf.viewer'
-    compileSdk 33
+    compileSdk 36
 
     defaultConfig {
         minSdk 24
-        targetSdk 33
+        targetSdk 36
         versionCode 1
         versionName "1.0"
 
@@ -22,11 +22,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+
+
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = false
+        }
+    }
 
+    ndkVersion "28.0.12433566"
+
+    lint {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -37,7 +52,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation 'com.github.barteksc:pdfium-android:1.9.0'
-
+    implementation 'io.github.oothp:pdfium-android:1.9.5-beta01'
 
 }

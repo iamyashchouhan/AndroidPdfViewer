@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.ymg.pdfviewerdemo'
-    compileSdk 33
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.ymg.pdfviewerdemo"
         minSdk 24
-        targetSdk 33
+        targetSdk 36
         versionCode 1
         versionName "1.0"
 
@@ -27,6 +27,22 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+
+        // 16 KB page size support configuration
+        jniLibs {
+            useLegacyPackaging true  // Use compressed shared libraries to avoid 16 KB alignment issues
+        }
+    }
+
+    // Enable 16 KB page size support for native libraries
+    ndkVersion "28.0.12433566"  // Use NDK r28+ for 16 KB support
 }
 
 dependencies {
